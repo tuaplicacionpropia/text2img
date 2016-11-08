@@ -42,12 +42,14 @@ https://developer.toshl.com/docs/
 For me
 ~~~~~~
 
-git status
-git add .
-git rm file2delete
-git commit -m "commit message"
-git push origin master
-python setup.py register sdist upload
+::
+
+    git status
+    git add .
+    git rm file2delete
+    git commit -m "commit message"
+    git push origin master
+    python setup.py register sdist upload
 
 
 Accounts
