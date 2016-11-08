@@ -4,7 +4,6 @@ text2img |License MIT|
 http://python-packaging.readthedocs.io/en/latest/index.html
 
 
-|Travis-CI Status|
 |PyPI version|
 
 .. |PyPI version| image:: https://badge.fury.io/py/text2img.svg
@@ -100,7 +99,7 @@ Copyright Note
 
 | **text2img** and its logos, design, text, graphics, and other files, and
   the selection arrangement and organization thereof, are owned by
-  tuaplicacionpropia.com.
+  http://tuaplicacionpropia.com.
 | This is a 3rd party code and I’m not affiliated nor I work for text2img.
 
 .. |License MIT| image:: https://go-shields.herokuapp.com/license-MIT-blue.png
