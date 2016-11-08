@@ -2,10 +2,9 @@
 
 from setuptools import setup, find_packages
 
-#http://python-packaging.readthedocs.io/en/latest/index.html
 setup(
     name='text2img',
-    version='0.0.1e',
+    version='0.0.1i',
     url='https://github.com/tuaplicacionpropia/text2img',
     download_url='https://github.com/tuaplicacionpropia/text2img/archive/master.zip',
     author=u'tuaplicacionpropia.com',

@@ -1,6 +1,9 @@
 text2img |License MIT|
 ==========================
 
+http://python-packaging.readthedocs.io/en/latest/index.html
+
+
 |Travis-CI Status|
 |PyPI version|
 
