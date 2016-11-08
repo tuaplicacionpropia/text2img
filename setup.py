@@ -1,19 +1,20 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='toshl',
-    version='0.0.4',
-    url='https://github.com/andreagrandi/toshl-python',
-    download_url='https://github.com/andreagrandi/toshl-python/tarball/0.0.4',
-    author='Andrea Grandi',
-    author_email='a.grandi@gmail.com',
-    description='Python client library for Toshl API.',
+    name='text2img',
+    version='0.0.1',
+    url='https://github.com/tuaplicacionpropia/text2img',
+    download_url='https://github.com/tuaplicacionpropia/text2img/archive/master.zip',
+    author='Tu aplicación propia',
+    author_email='tuaplicacionpropia@gmail.com',
+    description='Python library for generate images from text.',
     packages=find_packages(exclude=['tests']),
     zip_safe=False,
     include_package_data=True,
     platforms='any',
     license='MIT',
     install_requires=[
-        'requests==2.9.1',
+        'lxml==3.3.3',
+        'hjson==2.0.2',
     ],
 )
