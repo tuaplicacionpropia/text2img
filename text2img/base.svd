@@ -1,0 +1,210 @@
+title: CEIP Esteban Navarro Sánchez
+title2: C.P. Pedro Lezcano
+subtitle: Infantil 2014 - 2017
+subtitle2: ''
+endmsg2: «Con esfuerzo y perseverancia podrás alcanzar tus metas»
+endmsg: «Me lo contaron y lo olvidé; lo vi y lo entendí; lo hice y lo aprendí»
+templates: [
+  {
+    template: clips/orla_type3.svg
+    themes: [
+      #t2_theme01
+      #t2_theme02
+      t2_theme03
+    ]
+  }
+/*
+  {
+    template: clips/orla_type2.svg
+    themes: [
+      t2_theme01
+    ]
+  }
+  {
+    template: clips/orla.svg
+    themes: [
+      theme25
+      #theme24
+      #theme23
+      #theme22
+      #theme21
+      #theme20
+      #theme19
+      #theme18
+    ]
+  }
+  {
+    template: clips/orla2.svg
+    themes: [
+      theme18
+    ]
+  }
+  {
+    template: clips/orla_canterbury.svg
+    themes: [
+      theme_canterbury
+    ]
+  }
+*/
+]
+teacher: {
+  name: LeticÍa Del Pino
+  surnames: Florido Ramírez
+  image: images/female_teacher3.jpg
+}
+background: {
+  title: C.P. Pedro Lezcano
+  subtitle: Promoción 2020 - 2023
+}
+students: [
+  {
+    name: Eugenia
+    surnames: Gómez Álvarez
+    image: images/female_student01.jpg
+    gender: female
+  }
+  {
+    name: Javier Ignacio
+    surnames: Molina Cano
+    image: images/male_student18.jpg
+    gender: male
+  }
+  {
+    name: Gerardo Emilio
+    surnames: Duque Gutiérrez
+    image: images/male_student19.jpg
+    gender: male
+  }
+  {
+    name: Germán
+    surnames: Lotero Upegui
+    image: images/male_student20.jpg
+    gender: male
+  }
+  {
+    name: Darío
+    surnames: Murillo González
+    image: images/male_student21.jpg
+    gender: male
+  }
+  {
+    name: César
+    surnames: Palacio Martínez
+    image: images/male_student22.jpg
+    gender: male
+  }
+  {
+    name: Gloria
+    surnames: Alzate Agudelo
+    image: images/female_student14.jpg
+    gender: female
+  }
+  {
+    name: Beatriz
+    surnames: Osorio Laverde
+    image: images/female_student15.jpg
+    gender: female
+  }
+  {
+    name: Carlos
+    surnames: Montoya Serna
+    image: images/male_student23.jpg
+    gender: male
+  }
+  {
+    name: Arturo
+    surnames: Tabares Mora
+    image: images/male_student24.jpg
+    gender: male
+  }
+  {
+    name: Elena
+    surnames: Sanclemente Zea
+    image: images/female_student16.jpg
+    gender: female
+  }
+  {
+    name: María
+    surnames: López Gaviria
+    image: images/female_student17.jpg
+    gender: female
+  }
+  {
+    name: Alfredo
+    surnames: Tobón Tobón
+    image: images/male_student25.jpg
+    gender: male
+  }
+  {
+    name: Julieta
+    surnames: Ruiz Ruiz
+    image: images/female_student20.jpg
+    gender: female
+  }
+  {
+    name: Laura
+    surnames: Duque García
+    image: images/female_student21.jpg
+    gender: female
+  }
+  {
+    name: Julio
+    surnames: Rodas Monsalve
+    image: images/male_student13.jpg
+    gender: male
+  }
+  {
+    name: Gabriel
+    surnames: Jiménez Gómez
+    image: images/male_student14.jpg
+    gender: male
+  }
+  {
+    name: Estefanía
+    surnames: Zárate Yépez
+    image: images/female_student18.jpg
+    gender: female
+  }
+  {
+    name: Héctor
+    surnames: Mosquera Benítez
+    image: images/male_student26.jpg
+    gender: male
+  }
+  {
+    name: Álvaro
+    surnames: Berdugo López
+    image: images/male_student27.jpg
+    gender: male
+  }
+  {
+    name: Paola
+    surnames: Hurtado Pérez
+    image: images/female_student19.jpg
+    gender: female
+  }
+  {
+    name: Fabiola
+    surnames: Muñoz Ramírez
+    image: images/female_student22.jpg
+    gender: female
+  }
+  {
+    name: Octavio
+    surnames: Díaz Pérez
+    image: images/male_student12.jpg
+    gender: male
+  }
+  {
+    name: José
+    surnames: Zapata Suárez
+    image: images/male_student15.jpg
+    gender: male
+  }
+  {
+    name: Bernardo
+    surnames: Posada Vera
+    image: images/male_student16.jpg
+    gender: male
+  }
+]

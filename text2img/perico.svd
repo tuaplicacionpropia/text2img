@@ -1,0 +1,12 @@
+name: Eugenia
+surnames: Gómez Álvarez
+image: images/female_student01.jpg
+gender: female
+templates: [
+  {
+    template: clips/student.svg
+    themes: [
+		theme1
+	]
+  }
+]

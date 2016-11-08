@@ -1,0 +1,555 @@
+#border_top_left: none
+#border_top_right: transform="translate(w=573.00842, 0) rotate(90) 
+#border_bottom_right: transform="rotate(90) translate(w=573.00842, H-573.41711) rotate(90) 
+#border_bottom_left: transform="rotate(90) rotate(90) translate(0, h=-573.41711) rotate(90)"
+
+theme1: {
+  background: background.svg
+  decorator: decorator.svg
+  border: {
+    top_left: border_top_left.svg
+    top_right: border_top_right.svg
+    bottom_left: border_bottom_left.svg
+    bottom_right: border_bottom_right.svg
+  }
+  header: header.svg
+  school: school.svg
+  teacher: teacher.svg
+  students: {
+    male: male_student.svg
+    female: female_student.svg
+  }
+}
+
+theme2: {
+  background: background.svg
+  decorator: decorator.svg
+  border: {
+    top_left: border_top_left2.svg
+    top_right: border_top_right.svg
+    bottom_left: border_bottom_left.svg
+    bottom_right: border_bottom_right2.svg
+  }
+  header: header.svg
+  school: school.svg
+  teacher: teacher.svg
+  students: {
+    male: male_student.svg
+    female: female_student.svg
+  }
+}
+
+theme3: {
+  background: background.svg
+  decorator: decorator.svg
+  border: {
+    top_left: border_top_left2.svg
+    top_right: border_top_right2.svg
+    bottom_left: border_bottom_left2.svg
+    bottom_right: border_bottom_right2.svg
+  }
+  header: header.svg
+  school: school.svg
+  teacher: teacher.svg
+  students: {
+    male: male_student.svg
+    female: female_student.svg
+  }
+}
+
+theme4: {
+  background: background.svg
+  decorator: decorator.svg
+  border: {
+    top_left: border_top_left.svg
+    top_right: border_top_right.svg
+    bottom_left: border_bottom_left.svg
+    bottom_right: border_bottom_right.svg
+  }
+  header: header.svg
+  school: school.svg
+  teacher: teacher.svg
+  students: {
+    male: student.svg
+    female: student.svg
+  }
+}
+
+theme5: {
+  background: background.svg
+  decorator: decorator.svg
+  border: {
+    top_left: border_top_left2.svg
+    top_right: border_top_right.svg
+    bottom_left: border_bottom_left.svg
+    bottom_right: border_bottom_right2.svg
+  }
+  header: header.svg
+  school: school.svg
+  teacher: teacher.svg
+  students: {
+    male: student.svg
+    female: student.svg
+  }
+}
+
+theme6: {
+  background: background.svg
+  decorator: decorator.svg
+  border: {
+    top_left: border_top_left2.svg
+    top_right: border_top_right2.svg
+    bottom_left: border_bottom_left2.svg
+    bottom_right: border_bottom_right2.svg
+  }
+  header: header.svg
+  school: school.svg
+  teacher: teacher.svg
+  students: {
+    male: student.svg
+    female: student.svg
+  }
+}
+
+theme7: {
+  background: background.svg
+  decorator: decorator.svg
+  border: {
+    top_left: border_top_left.svg
+    top_right: border_top_right.svg
+    bottom_left: border_bottom_left.svg
+    bottom_right: border_bottom_right.svg
+  }
+  header: header.svg
+  school: school.svg
+  teacher: teacher.svg
+  students: {
+    male: school_student.svg
+    female: school_student.svg
+  }
+}
+
+theme8: {
+  background: background.svg
+  decorator: decorator.svg
+  border: {
+    top_left: border_top_left2.svg
+    top_right: border_top_right.svg
+    bottom_left: border_bottom_left.svg
+    bottom_right: border_bottom_right2.svg
+  }
+  header: header.svg
+  school: school.svg
+  teacher: teacher.svg
+  students: {
+    male: school_student.svg
+    female: school_student.svg
+  }
+}
+
+theme9: {
+  background: background.svg
+  decorator: decorator.svg
+  border: {
+    top_left: border_top_left2.svg
+    top_right: border_top_right2.svg
+    bottom_left: border_bottom_left2.svg
+    bottom_right: border_bottom_right2.svg
+  }
+  header: header.svg
+  school: school.svg
+  teacher: teacher.svg
+  students: {
+    male: school_student.svg
+    female: school_student.svg
+  }
+}
+
+theme10: {
+  background: background.svg
+  decorator: decorator.svg
+  border: {
+    top_left: border_top_left3.svg
+    top_right: border_top_right3.svg
+    bottom_left: border_bottom_left3.svg
+    bottom_right: border_bottom_right3.svg
+  }
+  header: header.svg
+  school: school.svg
+  teacher: teacher.svg
+  students: {
+    male: school_student.svg
+    female: school_student.svg
+  }
+}
+
+theme11: {
+  background: background.svg
+  decorator: decorator.svg
+  border: {
+    top_left: border_top_left4.svg
+    top_right: border_top_right4.svg
+    bottom_left: border_bottom_left4.svg
+    bottom_right: border_bottom_right4.svg
+  }
+  header: header.svg
+  school: school.svg
+  teacher: teacher.svg
+  students: {
+    male: school_student.svg
+    female: school_student.svg
+  }
+}
+
+theme12: {
+  background: background.svg
+  decorator: decorator_angel.svg
+  border: {
+    top_left: border_top_left4.svg
+    top_right: border_top_right4.svg
+    bottom_left: border_bottom_left4.svg
+    bottom_right: border_bottom_right4.svg
+  }
+  header: header.svg
+  school: school.svg
+  teacher: teacher.svg
+  students: {
+    male: school_student.svg
+    female: school_student.svg
+  }
+}
+
+theme13: {
+  background: background.svg
+  decorator: decorator_angel.svg
+  border: {
+    top_left: border_top_left.svg
+    top_right: border_top_right.svg
+    bottom_left: border_bottom_left.svg
+    bottom_right: border_bottom_right.svg
+  }
+  header: header.svg
+  school: school.svg
+  teacher: teacher.svg
+  students: {
+    male: school_student.svg
+    female: school_student.svg
+  }
+}
+
+theme14: {
+  background: background.svg
+  decorator: decorator_angel2.svg
+  border: {
+    top_left: border_top_left.svg
+    top_right: border_top_right.svg
+    bottom_left: border_bottom_left.svg
+    bottom_right: border_bottom_right.svg
+  }
+  header: header.svg
+  school: school.svg
+  teacher: teacher.svg
+  students: {
+    male: school_student.svg
+    female: school_student.svg
+  }
+}
+
+theme15: {
+  background: background.svg
+  decorator: decorator_angel3.svg
+  border: {
+    top_left: border_top_left.svg
+    top_right: border_top_right.svg
+    bottom_left: border_bottom_left.svg
+    bottom_right: border_bottom_right.svg
+  }
+  header: header.svg
+  school: school.svg
+  teacher: teacher.svg
+  students: {
+    male: school_student.svg
+    female: school_student.svg
+  }
+}
+
+theme16: {
+  background: background.svg
+  decorator: decorator_angel3.svg
+  border: {
+    top_left: border_top_left.svg
+    top_right: border_top_right.svg
+    bottom_left: border_bottom_left.svg
+    bottom_right: border_bottom_right.svg
+  }
+  header: header.svg
+  school: school.svg
+  teacher: teacher_school.svg
+  students: {
+    male: school_student.svg
+    female: school_student.svg
+  }
+}
+
+theme17: {
+  background: background.svg
+  decorator: decorator_angel3.svg
+  border: {
+    top_left: border_top_left5.svg
+    top_right: border_top_right5.svg
+    bottom_left: border_bottom_left5.svg
+    bottom_right: border_bottom_right5.svg
+  }
+  header: header.svg
+  school: school.svg
+  teacher: teacher_school.svg
+  students: {
+    male: school_student.svg
+    female: school_student.svg
+  }
+}
+
+theme18: {
+  background: background2.svg
+  decorator: decorator_angel3.svg
+  border: {
+    top_left: border_top_left5.svg
+    top_right: border_top_right5.svg
+    bottom_left: border_bottom_left5.svg
+    bottom_right: border_bottom_right5.svg
+  }
+  header: header.svg
+  school: school.svg
+  teacher: teacher_school.svg
+  students: {
+    male: school_student.svg
+    female: school_student.svg
+  }
+}
+
+theme_canterbury: {
+  background: background_canterbury.svg
+  decorator: decorator_angel3.svg
+  border: {
+    top_left: border_top_left5.svg
+    top_right: border_top_right5.svg
+    bottom_left: border_bottom_left5.svg
+    bottom_right: border_bottom_right5.svg
+  }
+  header: header_canterbury.svg
+  school: school_canterbury.svg
+  teacher: teacher_school_canterbury.svg
+  students: {
+    male: school_student_canterbury.svg
+    female: school_student_canterbury.svg
+  }
+}
+
+theme19: {
+  background: background3.svg
+  decorator: decorator_angel3.svg
+  border: {
+    top_left: border_top_left5.svg
+    top_right: border_top_right5.svg
+    bottom_left: border_bottom_left5.svg
+    bottom_right: border_bottom_right5.svg
+  }
+  header: header.svg
+  school: school.svg
+  teacher: teacher_school.svg
+  students: {
+    male: school_student.svg
+    female: school_student.svg
+  }
+}
+
+theme20: {
+  background: background3.svg
+  decorator: decorator_angel3.svg
+  border: {
+    top_left: border_top_left.svg
+    top_right: border_top_right.svg
+    bottom_left: border_bottom_left.svg
+    bottom_right: border_bottom_right.svg
+  }
+  header: header.svg
+  school: school.svg
+  teacher: teacher_school.svg
+  students: {
+    male: school_student.svg
+    female: school_student.svg
+  }
+}
+
+theme21: {
+  background: background4.svg
+  decorator: decorator_angel3.svg
+  border: {
+    top_left: border_top_left.svg
+    top_right: border_top_right.svg
+    bottom_left: border_bottom_left.svg
+    bottom_right: border_bottom_right.svg
+  }
+  header: header.svg
+  school: school.svg
+  teacher: teacher_school.svg
+  students: {
+    male: school_student.svg
+    female: school_student.svg
+  }
+}
+
+theme22: {
+  background: background5.svg
+  decorator: decorator_angel3.svg
+  border: {
+    top_left: border_top_left.svg
+    top_right: border_top_right.svg
+    bottom_left: border_bottom_left.svg
+    bottom_right: border_bottom_right.svg
+  }
+  header: header.svg
+  school: school.svg
+  teacher: teacher_school.svg
+  students: {
+    male: school_student.svg
+    female: school_student.svg
+  }
+}
+
+theme23: {
+  background: background6.svg
+  decorator: decorator_angel3.svg
+  border: {
+    top_left: border_top_left.svg
+    top_right: border_top_right.svg
+    bottom_left: border_bottom_left.svg
+    bottom_right: border_bottom_right.svg
+  }
+  header: header.svg
+  school: school.svg
+  teacher: teacher_school.svg
+  students: {
+    male: school_student.svg
+    female: school_student.svg
+  }
+}
+
+theme24: {
+  background: background7.svg
+  decorator: decorator_angel3.svg
+  border: {
+    top_left: border_top_left.svg
+    top_right: border_top_right.svg
+    bottom_left: border_bottom_left.svg
+    bottom_right: border_bottom_right.svg
+  }
+  header: header.svg
+  school: school.svg
+  teacher: teacher_school.svg
+  students: {
+    male: school_student.svg
+    female: school_student.svg
+  }
+}
+
+theme25: {
+  background: background8.svg
+  decorator: decorator_angel3.svg
+  border: {
+    top_left: border_top_left.svg
+    top_right: border_top_right.svg
+    bottom_left: border_bottom_left.svg
+    bottom_right: border_bottom_right.svg
+  }
+  header: header.svg
+  school: school.svg
+  teacher: teacher_school.svg
+  students: {
+    male: school_student.svg
+    female: school_student.svg
+  }
+}
+
+t2_theme01: {
+  background: background_type2.svg
+  decorator: decorator_angel3.svg
+  border: {
+    top_left: border_top_left_type2.svg
+    top_right: border_top_right_type2.svg
+    bottom_left: border_bottom_left_type2.svg
+    bottom_right: border_bottom_right_type2.svg
+  }
+  header: header_type3.svg
+  school: school.svg
+  teacher: teacher_base.svg
+  students: {
+    male: student_base.svg
+    female: student_base.svg
+  }
+}
+
+t2_theme02: {
+  background: background_type2
+  #decorator: decorator_angel3
+  border: {
+    top_left: border_top_left_type2
+    top_right: border_top_right_type2
+    bottom_left: border_bottom_left_type2
+    bottom_right: border_bottom_right_type2
+  }
+  header: header_type3
+  school: school
+  teacher: teacher_base
+  students: {
+    male: student_base
+    female: student_base
+  }
+}
+
+t2_theme03: {
+  background: background_type2
+  #decorator: decorator_angel3
+  border: {
+    top_left: border_top_left_type2
+    top_right: border_top_right_type2
+    bottom_left: border_bottom_left_type2
+    bottom_right: border_bottom_right_type2
+  }
+  header: header_type3
+  school: school
+  teacher: teacher_base
+  students: {
+    male: student_base3
+    female: student_base3
+  }
+}
+/*
+tgenerator: {
+  background: *
+  #decorator: *
+  border: {
+    top_left: *top_left*
+    top_right: *top_right*
+    bottom_left: *bottom_left*
+    bottom_right: *bottom_right*
+    validate: 
+      '''
+        sfxtoplft = top_left.index(
+        sfxtoprgh = 
+        sfxbtmlft = 
+        sfxbtmrgh = 
+        result = (sfxtoplft == sfxbtmrgh and sfxtoprgh == sfxbtmlft)
+      '''
+  }
+  header: *
+  school: *
+  teacher: *
+  students: {
+    male: *
+    female: *
+    validate: '''
+    '''
+  }
+}
+*/

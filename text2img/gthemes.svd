@@ -1,0 +1,21 @@
+tgenerator: {
+  background: (.*)type(.*)
+  #decorator: *
+  border: {
+    top_left: *top_left*
+    top_right: *top_right*
+    bottom_left: *bottom_left*
+    bottom_right: *bottom_right*
+    validate: (top_left0 == bottom_right0 and top_right0 == bottom_left0)
+  }
+  header: *
+  school: *
+  teacher: *
+  students: {
+    male: *
+    female: *
+    validate: '''
+       hola
+    '''
+  }
+}

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="147.14285"
+   height="144.22968"
+   viewBox="0 0 147.14286 144.22968"
+   id="svg5312"
+   version="1.1"
+   inkscape:version="0.91 r"
+   sodipodi:docname="female_student.svg">
+  <defs
+     id="defs5314">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath6383-9-1">
+      <g
+         transform="translate(162.63456,171.22086)"
+         id="g6385-3-3">
+        <ellipse
+           ry="62.67857"
+           rx="62.32143"
+           cy="609.68359"
+           cx="263.03571"
+           transform="matrix(0.99490602,0,0,0.98923709,-315.73897,-67.452469)"
+           id="path6387-3-2"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+        <ellipse
+           ry="62.67857"
+           rx="62.32143"
+           cy="609.68359"
+           cx="263.03571"
+           transform="matrix(0.93123203,0,0,0.92592592,-298.99043,-28.852689)"
+           id="path6389-8-1"
+           style="fill:none;stroke:#000000;stroke-opacity:1" />
+      </g>
+    </clipPath>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.15823734px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 66.150548,599.42591 c 41.727092,-4.63997 77.493762,-2.79475 120.556042,0.74598"
+       id="path6121-7-0-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="62.10124"
+     inkscape:cy="65.31739"
+     inkscape:document-units="px"
+     inkscape:current-layer="g5260-9-8"
+     showgrid="false"
+     units="px"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1855"
+     inkscape:window-height="1056"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5317">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+        <dc:description>svg.setImg('image', data['image'])
+svg.setText('name', data['name'] + ' ' + data['surnames'])</dc:description>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-215.00001,-105.96166)">
+    <g
+       style="display:inline"
+       id="g5260-9-8"
+       transform="translate(530.28246,-887.528)">
+      <g
+         transform="translate(-6.563412,-18.788064)"
+         id="g5262-8-0">
+        <g
+           transform="translate(-10.749449,22.433931)"
+           id="g5264-7-4">
+          <path
+             transform="matrix(0.92225789,0,0,0.92225789,-16.89014,-58.128197)"
+             inkscape:transform-center-y="0.024946276"
+             inkscape:transform-center-x="-1.0010907"
+             d="m -151.42857,1241.6479 c -0.75211,2.0386 -8.24905,1.6686 -9.18605,3.6291 -0.937,1.9605 4.05977,7.5617 2.94587,9.4274 -1.1139,1.8657 -8.4152,0.1245 -9.69649,1.8794 -1.2813,1.755 2.60118,8.179 1.16343,9.8082 -1.43776,1.6293 -8.29479,-1.4239 -9.87674,0.066 -1.58195,1.4897 1.05402,8.5177 -0.65863,9.855 -1.71265,1.3373 -7.8919,-2.9239 -9.72064,-1.7503 -1.82874,1.1736 -0.52904,8.5663 -2.45826,9.5662 -1.92922,0.9998 -7.22027,-4.3242 -9.23351,-3.5067 -2.01325,0.8176 -2.09409,8.3233 -4.17419,8.9516 -2.08009,0.6283 -6.30275,-5.5773 -8.43195,-5.1436 -2.1292,0.4338 -3.58781,7.7967 -5.74795,8.0322 -2.16014,0.2354 -5.17061,-6.6405 -7.34325,-6.6054 -2.17265,0.035 -4.95937,7.0047 -7.12599,6.8392 -2.16662,-0.1655 -3.86238,-7.4775 -6.00449,-7.8422 -2.1421,-0.3647 -6.16203,5.9741 -8.26135,5.4133 -2.09931,-0.5608 -2.42263,-8.0599 -4.46124,-8.812 -2.03862,-0.7521 -7.15486,4.7402 -9.11539,3.8032 -1.96052,-0.937 -0.90037,-8.3679 -2.76608,-9.4818 -1.8657,-1.1139 -7.90404,3.3448 -9.65901,2.0635 -1.75496,-1.2813 0.65254,-8.3908 -0.97672,-9.8285 -1.62926,-1.4378 -8.38405,1.8354 -9.8737,0.2534 -1.48965,-1.5819 2.18323,-8.128 0.8459,-9.8406 -1.33733,-1.7127 -8.57856,0.2636 -9.75216,-1.5652 -1.1736,-1.8287 3.63957,-7.5884 2.63971,-9.5176 -0.99986,-1.9293 -8.48093,-1.3172 -9.29852,-3.3305 -0.81759,-2.0132 4.97198,-6.7904 4.34364,-8.8705 -0.62835,-2.0801 -8.0945,-2.8531 -8.52824,-4.9824 -0.43373,-2.1292 6.13507,-5.7612 5.89964,-7.9213 -0.23542,-2.1602 -7.43241,-4.2919 -7.46752,-6.4646 -0.0351,-2.1726 7.08924,-4.5358 7.25474,-6.7025 0.16551,-2.1666 -6.51723,-5.5845 -6.15252,-7.7266 0.36471,-2.1421 7.80199,-3.1559 8.36279,-5.2553 0.5608,-2.0993 -5.3801,-6.6869 -4.62799,-8.7256 0.75211,-2.0386 8.24905,-1.6686 9.18605,-3.6291 0.937,-1.9605 -4.05977,-7.5617 -2.94587,-9.4274 1.1139,-1.8657 8.4152,-0.1245 9.69649,-1.8794 1.2813,-1.755 -2.60118,-8.179 -1.16343,-9.8082 1.43776,-1.6293 8.29479,1.4239 9.87674,-0.066 1.58195,-1.4897 -1.05402,-8.5177 0.65863,-9.855 1.71265,-1.3373 7.8919,2.9239 9.72064,1.7503 1.82874,-1.1736 0.52904,-8.5663 2.45826,-9.5662 1.92922,-0.9998 7.22027,4.3243 9.23351,3.5067 2.01325,-0.8176 2.09409,-8.3232 4.17419,-8.9516 2.08009,-0.6283 6.30275,5.5773 8.43195,5.1436 2.1292,-0.4337 3.58781,-7.7967 5.74795,-8.0322 2.16014,-0.2354 5.17061,6.6405 7.34325,6.6054 2.17265,-0.035 4.95937,-7.0047 7.12599,-6.8392 2.16662,0.1655 3.86238,7.4775 6.00449,7.8422 2.1421,0.3647 6.16203,-5.9741 8.26135,-5.4133 2.09931,0.5608 2.42263,8.0599 4.46124,8.812 2.03862,0.7521 7.15486,-4.7402 9.11539,-3.8032 1.96052,0.937 0.90037,8.3679 2.76608,9.4818 1.8657,1.1139 7.90404,-3.3448 9.65901,-2.0635 1.75496,1.2813 -0.65254,8.3908 0.97672,9.8286 1.62926,1.4377 8.38405,-1.8355 9.8737,-0.2535 1.48965,1.5819 -2.18323,8.128 -0.8459,9.8406 1.33733,1.7127 8.57856,-0.2636 9.75216,1.5652 1.1736,1.8287 -3.63957,7.5884 -2.63971,9.5176 0.99986,1.9293 8.48093,1.3172 9.29852,3.3305 0.81759,2.0132 -4.97198,6.7904 -4.34364,8.8705 0.62835,2.0801 8.0945,2.8532 8.52824,4.9824 0.43373,2.1292 -6.13507,5.7612 -5.89964,7.9214 0.23542,2.1601 7.43241,4.2919 7.46752,6.4645 0.0351,2.1726 -7.08924,4.5358 -7.25474,6.7025 -0.16551,2.1666 6.51723,5.5845 6.15252,7.7266 -0.36471,2.1421 -7.80199,3.156 -8.36279,5.2553 -0.5608,2.0993 5.3801,6.6869 4.62799,8.7256 z"
+             inkscape:randomized="0"
+             inkscape:rounded="0.22"
+             inkscape:flatsided="false"
+             sodipodi:arg2="0.44584001"
+             sodipodi:arg1="0.35344023"
+             sodipodi:r2="71.361008"
+             sodipodi:r1="78.418686"
+             sodipodi:cy="1214.505"
+             sodipodi:cx="-225"
+             sodipodi:sides="34"
+             id="path5266-2-2"
+             style="fill:#d58a9e;fill-opacity:1;fill-rule:evenodd;stroke:none"
+             sodipodi:type="star" />
+          <g
+             transform="translate(-451.68249,332.23287)"
+             id="image">
+            <ellipse
+               ry="62.67857"
+               rx="62.32143"
+               cy="609.68359"
+               cx="263.03571"
+               style="fill:#ffffff;fill-opacity:1;stroke:#a0a0a0;stroke-opacity:1"
+               id="path5270-2-6"
+               transform="matrix(0.99490602,0,0,0.98923709,-34.411483,126.60413)" />
+            <image
+               y="643.51776"
+               x="43.178379"
+               id="image5272-9-1"
+               inkscape:label="#%image"
+               xlink:href="file:///home/jmramoss/almacen/ORLAS/ejemplos/foto_alumna4.jpg"
+               height="178.26974"
+               width="132.30957"
+               clip-path="url(#clipPath6383-9-1)"
+               transform="translate(118.69293,22.835735)" />
+            <ellipse
+               ry="62.67857"
+               rx="62.32143"
+               cy="609.68359"
+               cx="263.03571"
+               style="fill:none;stroke:#a0a0a0;stroke-opacity:1"
+               id="path5274-9-0"
+               transform="matrix(0.93123203,0,0,0.92592592,-17.66295,165.20391)" />
+          </g>
+        </g>
+      </g>
+      <g
+         transform="translate(-400.99674,566.78572)"
+         id="g5276-6-4">
+        <path
+           id="path5278-0-2"
+           style="fill:#cf7592;fill-opacity:1;stroke:none"
+           d="m 85.714286,549.14789 c 46.882904,-5.64986 96.466544,-4.54792 147.142854,-0.71428 -4.93786,4.73083 -6.32777,7.50912 -7.5,10.35714 1.02297,5.9787 3.05725,8.92349 5,12.14286 -62.13072,-5.84411 -101.60081,-2.82103 -142.499997,-0.35715 2.797206,-3.92857 4.344628,-7.85714 4.285714,-11.78571 -3.71236,-7.9228 -4.404874,-6.78605 -6.428571,-9.64286 z"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccccc" />
+        <path
+           style="display:none;fill:none;stroke:#000000;stroke-width:1.15823734px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 100.1743,566.63241 c 41.7271,-4.63997 77.49377,-2.79475 120.55605,0.74598"
+           id="path_name"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cc" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Matura MT Script Capitals';-inkscape-font-specification:'Matura MT Script Capitals Semi-Bold';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+           id="name"
+           sodipodi:linespacing="125%"
+           x="108.55206"
+           y="0"
+           transform="translate(34.023757,-38.722082)"
+           inkscape:label="#%name"><textPath
+             xlink:href="#path6121-7-0-5"
+             id="textPath5284-6-0"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;font-family:'Dancing Script';-inkscape-font-specification:'Dancing Script Bold';text-align:start;text-anchor:start">Carlota Gutierrez Ramos</textPath></text>
+      </g>
+    </g>
+  </g>
+</svg>

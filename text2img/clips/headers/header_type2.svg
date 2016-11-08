@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="359.63882"
+   height="60.268311"
+   id="svg4840"
+   version="1.1"
+   viewBox="0 0 356.89576 104.80482"
+   inkscape:version="0.91 r"
+   sodipodi:docname="header_type2.svg">
+  <defs
+     id="defs4842">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.9900983px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1365.7212,-114.24658 c 163.6967,58.913956 364.3962,76.710146 646.5076,4.04139"
+       id="path3892"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.39723718px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1486.7686,0.083919 c 117.9474,9.353995 227.6872,11.105496 323.5459,0"
+       id="path3356"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <inkscape:path-effect
+       effect="bend_path"
+       id="path-effect5212"
+       is_visible="true"
+       bendpath="m 623.89884,-71.149665 c 27.83219,26.288448 71.37527,35.287895 94.56236,38.385797"
+       prop_scale="1"
+       scale_y_rel="false"
+       vertical="false"
+       bendpath-nodetypes="cc" />
+    <inkscape:path-effect
+       effect="bend_path"
+       id="path-effect8360"
+       is_visible="true"
+       bendpath="m 737.02884,-2252.6966 c 87.0088,-7.1013 120.25489,-12.9139 207.83409,-45.7143"
+       prop_scale="1"
+       scale_y_rel="true"
+       vertical="false"
+       bendpath-nodetypes="cc" />
+    <path
+       style="display:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.18532228px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 304.85127,489.92204 c 137.79082,26.95615 294.89483,19.40271 454.18543,-7.39059"
+       id="path_title-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="4.774858"
+     inkscape:cx="81.491954"
+     inkscape:cy="-74.3376"
+     inkscape:document-units="px"
+     inkscape:current-layer="g3365"
+     showgrid="false"
+     inkscape:window-width="1855"
+     inkscape:window-height="1056"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     units="px" />
+  <metadata
+     id="metadata4845">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+        <dc:description>title = data['title']
+arrayTitle = title.split()
+title1 = arrayTitle[0] if len(arrayTitle) &gt; 1 else ''
+title2 = ' '.join(arrayTitle[1:]) if len(arrayTitle) &gt; 1 else title
+title1 = title1.upper() if len(title1) &gt; 0 else ''
+title2 = title2.upper() if len(title2) &gt; 0 else ''
+svg.setText('title1', title1)
+svg.setText('title2', title2)</dc:description>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-643.45491,418.54193)">
+    <g
+       style="display:inline"
+       id="g4402"
+       transform="matrix(0.79575019,0,0,0.79575019,402.35222,-699.37061)">
+      <path
+         style="display:none;fill:none;stroke:#000000;stroke-width:0.9900983px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 214.29264,448.61056 c 163.6967,58.91395 364.3962,76.71014 646.5076,4.04139"
+         id="path4372"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="display:none;fill:none;stroke:#000000;stroke-width:1.39723718px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 335.34004,562.94106 c 117.9474,9.35399 227.6872,11.10549 323.5459,0"
+         id="path4378"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc" />
+      <g
+         id="g3365">
+        <text
+           inkscape:label="#%title2"
+           sodipodi:linespacing="125%"
+           id="title2"
+           style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:87.41288757px;line-height:125%;font-family:odstemplik;-inkscape-font-specification:'odstemplik Bold Italic';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"
+           transform="translate(516.75825,468.05438)"><textPath
+             xlink:href="#path3348"
+             startOffset="50%"
+             id="textPath3350"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60.09636307px;font-family:Lobster;-inkscape-font-specification:Lobster;text-align:center;text-anchor:middle;fill:#2f5b5e;fill-opacity:1">ESTEBAN NAVARRO SÁNCHEZ</textPath></text>
+        <text
+           y="398.10025"
+           x="516.09802"
+           xml:space="preserve"
+           style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:87.41288757px;line-height:125%;font-family:odstemplik;-inkscape-font-specification:'odstemplik Bold Italic';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="title1"
+           sodipodi:linespacing="125%"
+           inkscape:label="#%title1"><tspan
+             id="tspan4274"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60.09636307px;font-family:Lobster;-inkscape-font-specification:Lobster;text-align:center;text-anchor:middle;fill:#2f5b5e;fill-opacity:1">CEIP</tspan></text>
+        <path
+           style="display:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.18532228px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 126.41384,455.03308 c 261.89194,29.36733 523.78389,31.1746 785.67583,0"
+           id="path_title2"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cc" />
+      </g>
+      <path
+         style="display:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.18532228px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 304.85127,489.92204 c 137.79082,26.95615 294.89483,19.40271 454.18543,-7.39059"
+         id="path_title"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc" />
+    </g>
+  </g>
+</svg>

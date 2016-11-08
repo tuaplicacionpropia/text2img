@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1052.3622"
+   height="744.09448"
+   viewBox="0 0 1052.3622 744.09448"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r"
+   sodipodi:docname="orla.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.58581736"
+     inkscape:cx="434.5568"
+     inkscape:cy="225.48234"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1855"
+     inkscape:window-height="1056"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+        <dc:description>svg.setPart('background', 'background.svg', data)
+svg.setPart('border_top_left', 'border_top_left2.svg', data)
+svg.setPart('border_top_right', 'border_top_right.svg', data)
+
+svg.setPart('border_bottom_left', 'border_bottom_left.svg', data)
+svg.setPart('border_bottom_right', 'border_bottom_right2.svg', data)
+
+
+svg.setPart('title', 'header.svg', data)
+svg.setPart('school', 'school.svg', data)
+svg.setPart('teacher', 'teacher.svg', data['teacher'])
+
+for idx in range(0, len(data['students'])):
+  student = data['students'][idx]
+  svg.setPart('student' + str('0' if idx &lt; 9 else '') + str(idx + 1), ('female' if student['gender'] == 'female' else 'male') + '_student.svg', student)
+for idx in range(len(data['students']), 26):
+  svg.removeById('student' + str('0' if idx &lt; 9 else '') + str(idx + 1))
+</dc:description>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-308.26772)">
+    <rect
+       style="opacity:1;fill:#008000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.94176674;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="background"
+       width="1053.744"
+       height="745.03857"
+       x="-0.76830262"
+       y="308.96152" />
+    <rect
+       style="fill:#ff00ff;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;image-rendering:auto"
+       id="border_top_left"
+       width="129.73326"
+       height="122.9052"
+       x="5.1210499"
+       y="314.931" />
+    <rect
+       style="opacity:1;fill:#dde9af;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.07144129;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="title"
+       width="459.07349"
+       height="118.90964"
+       x="300.05838"
+       y="312.72455"
+       inkscape:label="#%title" />
+    <rect
+       y="314.931"
+       x="914.96094"
+       height="122.9052"
+       width="129.73326"
+       id="border_top_right"
+       style="fill:#ff00ff;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;image-rendering:auto" />
+    <rect
+       style="opacity:1;fill:#ffff00;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.05246747;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="teacher"
+       width="163.85904"
+       height="170.64157"
+       x="802.21844"
+       y="343.11179" />
+    <rect
+       style="fill:#ff00ff;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;image-rendering:auto"
+       id="border_bottom_right"
+       width="129.73326"
+       height="122.9052"
+       x="914.96094"
+       y="924.33594" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd;stroke:#000000;stroke-width:0.99260432px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="school"
+       width="319.21948"
+       height="221.91956"
+       x="651.27734"
+       y="786.65259" />
+    <rect
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1.14799917px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="student01"
+       width="86.909851"
+       height="114.22212"
+       x="81.943062"
+       y="524.0636" />
+    <rect
+       y="524.0636"
+       x="195.82547"
+       height="114.22212"
+       width="86.909851"
+       id="student02"
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1.14799917px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <rect
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1.14799917px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="student03"
+       width="86.909851"
+       height="114.22212"
+       x="309.70789"
+       y="524.0636" />
+    <rect
+       y="524.0636"
+       x="423.5903"
+       height="114.22212"
+       width="86.909851"
+       id="student04"
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1.14799917px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:label="#student04" />
+    <rect
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1.14799917px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="student05"
+       width="86.909851"
+       height="114.22212"
+       x="537.47272"
+       y="524.0636" />
+    <rect
+       y="524.0636"
+       x="651.35504"
+       height="114.22212"
+       width="86.909851"
+       id="student06"
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1.14799917px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <rect
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1.14799917px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="student07"
+       width="86.909851"
+       height="114.22212"
+       x="765.23755"
+       y="524.0636" />
+    <rect
+       y="524.0636"
+       x="879.11987"
+       height="114.22212"
+       width="86.909851"
+       id="student08"
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1.14799917px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <rect
+       y="655.39697"
+       x="81.943062"
+       height="114.22212"
+       width="86.909851"
+       id="student09"
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1.14799917px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <rect
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1.14799917px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="student10"
+       width="86.909851"
+       height="114.22212"
+       x="195.82547"
+       y="655.39697" />
+    <rect
+       y="655.39697"
+       x="309.70789"
+       height="114.22212"
+       width="86.909851"
+       id="student11"
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1.14799917px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <rect
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1.14799917px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="student12"
+       width="86.909851"
+       height="114.22212"
+       x="423.5903"
+       y="655.39697" />
+    <rect
+       y="655.39697"
+       x="537.47272"
+       height="114.22212"
+       width="86.909851"
+       id="student13"
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1.14799917px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <rect
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1.14799917px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="student14"
+       width="86.909851"
+       height="114.22212"
+       x="651.35504"
+       y="655.39697" />
+    <rect
+       y="655.39697"
+       x="765.23755"
+       height="114.22212"
+       width="86.909851"
+       id="student15"
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1.14799917px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <rect
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1.14799917px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="student16"
+       width="86.909851"
+       height="114.22212"
+       x="879.11987"
+       y="655.39697" />
+    <rect
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1.14799917px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="student17"
+       width="86.909851"
+       height="114.22212"
+       x="81.943062"
+       y="786.73029" />
+    <rect
+       y="786.73029"
+       x="195.82547"
+       height="114.22212"
+       width="86.909851"
+       id="student18"
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1.14799917px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <rect
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1.14799917px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="student19"
+       width="86.909851"
+       height="114.22212"
+       x="309.70789"
+       y="786.73029" />
+    <rect
+       y="786.73029"
+       x="423.5903"
+       height="114.22212"
+       width="86.909851"
+       id="student20"
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1.14799917px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <rect
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1.14799917px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="student21"
+       width="86.909851"
+       height="114.22212"
+       x="537.47272"
+       y="786.73029" />
+    <rect
+       y="924.33594"
+       x="5.1210499"
+       height="122.9052"
+       width="129.73326"
+       id="border_bottom_left"
+       style="fill:#ff00ff;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;image-rendering:auto" />
+    <rect
+       y="918.0636"
+       x="81.943062"
+       height="114.22212"
+       width="86.909851"
+       id="student22"
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1.14799917px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <rect
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1.14799917px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="student23"
+       width="86.909851"
+       height="114.22212"
+       x="195.82547"
+       y="918.0636" />
+    <rect
+       y="918.0636"
+       x="309.70789"
+       height="114.22212"
+       width="86.909851"
+       id="student24"
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1.14799917px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <rect
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1.14799917px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="student25"
+       width="86.909851"
+       height="114.22212"
+       x="423.5903"
+       y="918.0636" />
+    <rect
+       y="918.0636"
+       x="537.47272"
+       height="114.22212"
+       width="86.909851"
+       id="student26"
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1.14799917px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  </g>
+</svg>
