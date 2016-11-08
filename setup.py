@@ -5,7 +5,7 @@ setup(
     version='0.0.1',
     url='https://github.com/tuaplicacionpropia/text2img',
     download_url='https://github.com/tuaplicacionpropia/text2img/archive/master.zip',
-    author='Tu aplicación propia',
+    author=u'Tu aplicación propia',
     author_email='tuaplicacionpropia@gmail.com',
     description='Python library for generate images from text.',
     packages=find_packages(exclude=['tests']),
