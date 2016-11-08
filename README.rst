@@ -7,23 +7,19 @@ http://python-packaging.readthedocs.io/en/latest/index.html
 |Travis-CI Status|
 |PyPI version|
 
-.. |PyPI version| image:: https://badge.fury.io/py/toshl.svg
-   :target: https://badge.fury.io/py/toshl
+.. |PyPI version| image:: https://badge.fury.io/py/text2img.svg
+   :target: https://badge.fury.io/py/text2img
 
 Python library for generate images from text
 
 Getting started with the library
 --------------------------------
 
-| To use the library, you first need to obtain a **token** from Toshl
-  API.
-| Once you have a token you need to import the library and create an
-  instance of the client:
+| To use the library, you first need to install it.
 
 ::
 
-    from toshl.client import ToshlClient
-    client = ToshlClient('xxx-xxxxx-xxx-xxxxxx-xxxxxx-xxx-xxxxxx')
+    pip install text2img
 
 Every resource exposes the following **methods**:
 
@@ -102,11 +98,10 @@ Entries
 Copyright Note
 --------------
 
-| **Toshl** and its logos, design, text, graphics, and other files, and
+| **text2img** and its logos, design, text, graphics, and other files, and
   the selection arrangement and organization thereof, are owned by
-  Toshl.
-| This is a 3rd party code and I’m not affiliated nor I work for Toshl.
+  tuaplicacionpropia.com.
+| This is a 3rd party code and I’m not affiliated nor I work for text2img.
 
 .. |License MIT| image:: https://go-shields.herokuapp.com/license-MIT-blue.png
-.. |Travis-CI Status| image:: https://secure.travis-ci.org/andreagrandi/toshl-python.png?branch=master
-   :target: http://travis-ci.org/#!/andreagrandi/toshl-python
+
