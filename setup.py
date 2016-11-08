@@ -2,14 +2,25 @@
 
 from setuptools import setup, find_packages
 
+#http://python-packaging.readthedocs.io/en/latest/index.html
 setup(
     name='text2img',
-    version='0.0.1c',
+    version='0.0.1e',
     url='https://github.com/tuaplicacionpropia/text2img',
     download_url='https://github.com/tuaplicacionpropia/text2img/archive/master.zip',
-    author=u'Tu aplicación propia',
+    author=u'tuaplicacionpropia.com',
     author_email='tuaplicacionpropia@gmail.com',
     description='Python library for generate images from text.',
+    long_description='Python library for generate images svg from text and svg templates.',
+    keywords='svg, text, json, generator',
+    classifiers=[
+      'Development Status :: 4 - Beta',
+      'License :: OSI Approved :: MIT License',
+      'Programming Language :: Python', 
+      'Programming Language :: Python :: 2.7', 
+      'Intended Audience :: Developers', 
+      'Topic :: Multimedia :: Graphics',
+    ],
     packages=find_packages(exclude=['tests']),
     zip_safe=False,
     include_package_data=True,
@@ -20,3 +31,4 @@ setup(
         'hjson==2.0.2',
     ],
 )
+

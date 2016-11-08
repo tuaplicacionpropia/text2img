@@ -3,13 +3,13 @@ include text2img/*.svd
 include text2img/images/*.jpg
 include text2img/faces/*
 
-include text2img/clips/backgrounds/*
-include text2img/clips/borders/*
-include text2img/clips/decorators/*
-include text2img/clips/headers/*
-include text2img/clips/misc/*
-include text2img/clips/schools/*
-include text2img/clips/students/*
-include text2img/clips/teachers/*
+include text2img/clips/backgrounds/*.svg
+include text2img/clips/borders/*.svg
+include text2img/clips/decorators/*.svg
+include text2img/clips/headers/*.svg
+include text2img/clips/misc/*.svg
+include text2img/clips/schools/*.svg
+include text2img/clips/students/*.svg
+include text2img/clips/teachers/*.svg
 include text2img/clips/*.svg
 
