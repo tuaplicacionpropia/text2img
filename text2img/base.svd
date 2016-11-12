@@ -4,6 +4,7 @@ subtitle: Infantil 2014 - 2017
 subtitle2: ''
 endmsg2: «Con esfuerzo y perseverancia podrás alcanzar tus metas»
 endmsg: «Me lo contaron y lo olvidé; lo vi y lo entendí; lo hice y lo aprendí»
+school: images/school.jpg
 templates: [
   {
     template: clips/orla_type3.svg

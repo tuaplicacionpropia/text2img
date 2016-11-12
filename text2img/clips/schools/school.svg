@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -179,9 +180,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.3111328"
-     inkscape:cx="362.6683"
-     inkscape:cy="-35.139094"
+     inkscape:zoom="0.81314686"
+     inkscape:cx="509.96567"
+     inkscape:cy="193.40657"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -203,7 +204,12 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
+        <dc:description>school = 'images/school.jpg'
+if 'school' in data:
+  school = data['school']
+svg.setImg('image', school)
+</dc:description>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -213,12 +219,13 @@
      id="layer1"
      transform="translate(-217.91433,-471.08)">
     <image
-       sodipodi:absref="/home/jmramoss/almacen/ORLAS/resources/clips/school/images/school.jpg"
-       xlink:href="images/school.jpg"
+       sodipodi:absref="/home/jmramoss/almacen/ORLAS/text2img/text2img/clips/schools/../../images/school.jpg"
+       xlink:href="../../images/school.jpg"
+       inkscape:label="#%image"
        transform="matrix(0.41331685,0,0,0.41331685,212.86599,334.65365)"
        width="1047"
        height="656"
-       id="image4427"
+       id="image"
        x="12.214223"
        y="330.0769"
        style="display:inline;filter:url(#filter7464)" />
