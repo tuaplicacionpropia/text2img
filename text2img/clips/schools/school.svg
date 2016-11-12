@@ -213,8 +213,8 @@
      id="layer1"
      transform="translate(-217.91433,-471.08)">
     <image
-       sodipodi:absref="/home/jmramoss/almacen/ORLAS/resources/clips/school/../images/school.jpg"
-       xlink:href="../images/school.jpg"
+       sodipodi:absref="/home/jmramoss/almacen/ORLAS/resources/clips/school/images/school.jpg"
+       xlink:href="images/school.jpg"
        transform="matrix(0.41331685,0,0,0.41331685,212.86599,334.65365)"
        width="1047"
        height="656"

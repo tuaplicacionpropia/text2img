@@ -494,7 +494,8 @@ translateX = diffsize.width / factor = 80,855738464
     inthemes = open(themesfile, 'r')
     themes = hjson.load(inthemes, use_decimal=True)
 
-    outputdir = os.path.join(base, 'output')
+    homedir = os.path.expanduser("~")
+    outputdir = os.path.join(homedir, 'text2img_output')
     if not os.path.exists(outputdir):
       os.makedirs(outputdir)
 
@@ -529,6 +530,7 @@ translateX = diffsize.width / factor = 80,855738464
         print 'fileJpg = ' + fileJpg
         #svg2.saveAsJpgA4(fileJpg)
         #svg2.saveAsJpg(fileJpg)
+        fileJpg = os.path.join(outputdir, fileJpg)
         svg2.previewAsJpg(fileJpg)
         if False and os.path.isfile(fileJpg) and os.path.isfile(tmpfile):
           os.remove(tmpfile)
