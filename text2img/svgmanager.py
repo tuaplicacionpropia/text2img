@@ -500,7 +500,13 @@ translateX = diffsize.width / factor = 80,855738464
     if not os.path.exists(outputdir):
       os.makedirs(outputdir)
 
-    for template in obj['templates']:
+    templates = []
+    templates = obj['templates'] if 'templates' in obj else templates
+    #if len(templates) <= 0:
+    #  folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'clips')
+      
+
+    for template in templates:
       templateUrl = template['template']
       #print 'templateUrl = ' + templateUrl
       basename = os.path.basename(templateUrl)

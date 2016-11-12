@@ -7,6 +7,15 @@ endmsg: «Me lo contaron y lo olvidé; lo vi y lo entendí; lo hice y lo aprend�
 school: images/school.jpg
 templates: [
   {
+    template: clips/orla.svg
+  }
+  {
+    template: clips/orla_type3.svg
+  }
+]
+/*
+templates: [
+  {
     template: clips/orla_type3.svg
     themes: [
       #t2_theme01
@@ -14,7 +23,6 @@ templates: [
       t2_theme03
     ]
   }
-/*
   {
     template: clips/orla_type2.svg
     themes: [
@@ -46,8 +54,8 @@ templates: [
       theme_canterbury
     ]
   }
-*/
 ]
+*/
 teacher: {
   name: LeticÍa Del Pino
   surnames: Florido Ramírez
