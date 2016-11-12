@@ -58,7 +58,7 @@ background: {
 }
 students: [
   {
-    name: Eugenia
+    name: Victoria
     surnames: Gómez Álvarez
     image: images/female_student01.jpg
     gender: female

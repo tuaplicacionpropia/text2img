@@ -19,6 +19,7 @@ Getting started with the library
 ::
 
     pip install text2img
+    python -c "import sys; import svgmanager; svgmanager.SvgManager.generate(sys.argv)"
 
 Every resource exposes the following **methods**:
 

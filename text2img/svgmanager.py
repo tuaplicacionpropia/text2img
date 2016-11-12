@@ -219,7 +219,9 @@ class SvgManager:
     #/home/jmramoss/almacen/ORLAS/resources/clips/student.svg
     #print os.path.dirname(self.fileXml)
     folder = os.path.dirname(self.fileXml)
-    folder = '/home/jmramoss/almacen/ORLAS/resources/'
+    #folder = '/home/jmramoss/almacen/ORLAS/resources/'
+    folder = os.path.dirname(os.path.abspath(__file__))
+    #print 'folder images = ' + folder
     absimg = image
     if not absimg.startswith(os.sep):
       absimg = os.path.join(folder, image)
@@ -447,7 +449,9 @@ translateX = diffsize.width / factor = 80,855738464
     #print 'end: transforming ' + self.fileXml
 
   def setPart (self, name, part, data):
-    folder = '/home/jmramoss/almacen/ORLAS/resources/clips'
+    #folder = '/home/jmramoss/almacen/ORLAS/resources/clips'
+    folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'clips')
+    #print 'folder>>>>>>>>>>>>> ' + folder
     #print 'h1'
     partFile = os.path.join(folder, part)
     #print 'h2 partFile = ' + partFile
@@ -464,75 +468,77 @@ translateX = diffsize.width / factor = 80,855738464
     #print 'h7'
     svgPart2.removeFile()
 
-def processMain ():
-  base = os.path.dirname(os.path.abspath(__file__))#'/home/jmramoss/almacen/ORLAS/resources/'
+  @staticmethod
+  def generate (args):
+    base = os.path.dirname(os.path.abspath(__file__))#'/home/jmramoss/almacen/ORLAS/resources/'
 
-  infileAddr = os.path.join(base, 'base.svd')
-  if len(sys.argv) > 1:
-    infileAddr = sys.argv[1]
-    if not infileAddr.startswith(os.sep):
-      infileAddr = os.path.join(base, infileAddr)
-  #print infileAddr
+    infileAddr = os.path.join(base, 'base.svd')
+    if len(args) > 1:
+      infileAddr = args[1]
+      if not infileAddr.startswith(os.sep):
+        infileAddr = os.path.join(base, infileAddr)
+    #print infileAddr
+
+    #infile = open('/home/jmramoss/almacen/ORLAS/resources/base.svd', 'r')
+    infile = open(infileAddr, 'r')
+    obj = hjson.load(infile, use_decimal=True)
+    #print '>>>>>>>>>>> obj.title = ' + obj['title']
+    #print '>>>>>>>>>>> obj.subtitle = ' + obj['subtitle']
+
+    themesfile = os.path.join(base, 'themes.svd')#open('/home/jmramoss/almacen/ORLAS/resources/themes.svd', 'r')
+    #print 'themesfile = ' + themesfile
+    if len(args) > 2:
+      themesfile = args[2]
+      if not themesfile.startswith(os.sep):
+        themesfile = os.path.join(base, themesfile)
+    inthemes = open(themesfile, 'r')
+    themes = hjson.load(inthemes, use_decimal=True)
+
+    outputdir = os.path.join(base, 'output')
+    if not os.path.exists(outputdir):
+      os.makedirs(outputdir)
+
+    for template in obj['templates']:
+      templateUrl = template['template']
+      #print 'templateUrl = ' + templateUrl
+      basename = os.path.basename(templateUrl)
+      dirname = os.path.dirname(templateUrl)
+      setThemes = (template['themes'] if 'themes' in template and len(template['themes']) > 0 else themes.keys())
+      for key in setThemes:
+        svgFile = os.path.join(base, templateUrl)
+        #print 'svgFile = ' + svgFile
+        svg = SvgManager(svgFile)
+        obj['theme'] = themes[key]
+        svg.transform(obj)
+        tmpfile = tempfile.mkstemp(suffix='.svg', prefix='' + key + '_', dir=outputdir)[1]
+        print 'tmpfile = ' + tmpfile
+  #      outfile = os.path.join(base, dirname, 'test_' + key + '_' + basename)
+        #outfile = os.path.join(base, 'test_' + key + '_' + basename)
+        svg2 = svg.saveAs(tmpfile)
+        #print os.path.basename(tmpfile)
+        '''
+        filePng = os.path.splitext(tmpfile)[0] + '.png'
+        print 'filePng = ' + filePng
+        #svg2.saveAsPngA4(filePng)
+        svg2.saveAsPng(filePng)
+        if os.path.isfile(filePng) and os.path.isfile(tmpfile):
+          os.remove(tmpfile)
+        '''
+        print 'tmpfile = ' + tmpfile
+        fileJpg = os.path.splitext(tmpfile)[0] + '.jpg'
+        print 'fileJpg = ' + fileJpg
+        #svg2.saveAsJpgA4(fileJpg)
+        #svg2.saveAsJpg(fileJpg)
+        svg2.previewAsJpg(fileJpg)
+        if False and os.path.isfile(fileJpg) and os.path.isfile(tmpfile):
+          os.remove(tmpfile)
   
-
-  #infile = open('/home/jmramoss/almacen/ORLAS/resources/base.svd', 'r')
-  infile = open(infileAddr, 'r')
-  obj = hjson.load(infile, use_decimal=True)
-  #print '>>>>>>>>>>> obj.title = ' + obj['title']
-  #print '>>>>>>>>>>> obj.subtitle = ' + obj['subtitle']
-
-  themesfile = os.path.join(base, 'themes.svd')#open('/home/jmramoss/almacen/ORLAS/resources/themes.svd', 'r')
-  #print 'themesfile = ' + themesfile
-  if len(sys.argv) > 2:
-    themesfile = sys.argv[2]
-    if not themesfile.startswith(os.sep):
-      themesfile = os.path.join(base, themesfile)
-  inthemes = open(themesfile, 'r')
-  themes = hjson.load(inthemes, use_decimal=True)
-
-  outputdir = os.path.join(base, 'output')
-  if not os.path.exists(outputdir):
-    os.makedirs(outputdir)
-
-  for template in obj['templates']:
-    templateUrl = template['template']
-    #print 'templateUrl = ' + templateUrl
-    basename = os.path.basename(templateUrl)
-    dirname = os.path.dirname(templateUrl)
-    setThemes = (template['themes'] if 'themes' in template and len(template['themes']) > 0 else themes.keys())
-    for key in setThemes:
-      svgFile = os.path.join(base, templateUrl)
-      #print 'svgFile = ' + svgFile
-      svg = SvgManager(svgFile)
-      obj['theme'] = themes[key]
-      svg.transform(obj)
-      tmpfile = tempfile.mkstemp(suffix='.svg', prefix='' + key + '_', dir=outputdir)[1]
-      print 'tmpfile = ' + tmpfile
-#      outfile = os.path.join(base, dirname, 'test_' + key + '_' + basename)
-      #outfile = os.path.join(base, 'test_' + key + '_' + basename)
-      svg2 = svg.saveAs(tmpfile)
-      #print os.path.basename(tmpfile)
-      '''
-      filePng = os.path.splitext(tmpfile)[0] + '.png'
-      print 'filePng = ' + filePng
-      #svg2.saveAsPngA4(filePng)
-      svg2.saveAsPng(filePng)
-      if os.path.isfile(filePng) and os.path.isfile(tmpfile):
-        os.remove(tmpfile)
-      '''
-      print 'tmpfile = ' + tmpfile
-      fileJpg = os.path.splitext(tmpfile)[0] + '.jpg'
-      print 'fileJpg = ' + fileJpg
-      #svg2.saveAsJpgA4(fileJpg)
-      #svg2.saveAsJpg(fileJpg)
-      svg2.previewAsJpg(fileJpg)
-      if False and os.path.isfile(fileJpg) and os.path.isfile(tmpfile):
-        os.remove(tmpfile)
-
 #import cairosvg
 #cairosvg.svg2png(url="/home/jmramoss/almacen/ORLAS/resources/orla1.svg", write_to="/home/jmramoss/almacen/ORLAS/resources/orla1.png")
 #cairosvg.svg2png(url="/home/jmramoss/almacen/ORLAS/resources/clips/school.svg", write_to="/home/jmramoss/almacen/ORLAS/resources/school.png")
 
-
+#/home/jmramoss/almacen/ORLAS/text2img/text2img
+#print os.path.dirname(os.path.abspath(__file__))
+#python -c "import sys; import svgmanager; svgmanager.SvgManager.generate(sys.argv)"
 if __name__ == '__main__':
-  processMain()
+  SvgManager.generate(sys.argv)
