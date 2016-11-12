@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.91827988"
-     inkscape:cx="424.75205"
-     inkscape:cy="342.64326"
+     inkscape:zoom="3.2216055"
+     inkscape:cx="615.9459"
+     inkscape:cy="337.64902"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -72,11 +72,46 @@ svg.setPart('teacher', 'teachers/' + theme['teacher'] + '.svg', data['teacher'])
 
 svg.setText('endmsg', data['endmsg'])
 
-for idx in range(0, len(data['students'])):
+numStudents = len(data['students'])
+#print 'numStudents = ' + str(numStudents)
+faltanPorCompletar = 26 - numStudents
+toDelete = None
+toDelete = [22] if faltanPorCompletar == 1 else toDelete
+toDelete = [18, 26] if faltanPorCompletar == 2 else toDelete
+toDelete = [1, 9, 22] if faltanPorCompletar == 3 else toDelete
+toDelete = [1, 9, 18, 26] if faltanPorCompletar == 4 else toDelete
+toDelete = [1, 9, 18, 22, 26] if faltanPorCompletar == 5 else toDelete
+toDelete = [1, 5, 9, 18, 22, 26] if faltanPorCompletar == 6 else toDelete
+toDelete = [1, 9, 18, 19, 22, 25, 26] if faltanPorCompletar == 7 else toDelete
+toDelete = [1, 2, 8, 9, 18, 19, 25, 26] if faltanPorCompletar == 8 else toDelete
+toDelete = [1, 2, 8, 9, 18, 19, 22, 25, 26] if faltanPorCompletar == 9 else toDelete
+toDelete = [1, 2, 5, 8, 9, 18, 19, 22, 25, 26] if faltanPorCompletar == 10 else toDelete
+toDelete = [1, 2, 5, 8, 9, 18, 19, 20, 24, 25, 26] if faltanPorCompletar == 11 else toDelete
+toDelete = [1, 2, 3, 7, 8, 9, 18, 19, 20, 24, 25, 26] if faltanPorCompletar == 12 else toDelete
+
+#toDelete = None
+
+if toDelete is not None:
+  for idx in toDelete:
+    #print 'partidx to remove ' + str(idx)
+    svg.removeById('student' + str('0' if idx &lt; 10 else '') + str(idx))
+
+idx = 0
+while idx &lt; numStudents:
   student = data['students'][idx]
-  svg.setPart('student' + str('0' if idx &lt; 9 else '') + str(idx + 1), ('students/' + theme['students']['female'] + '.svg' if student['gender'] == 'female' else 'students/' + theme['students']['male'] + '.svg'), student)
-for idx in range(len(data['students']), 26):
-  svg.removeById('student' + str('0' if idx &lt; 9 else '') + str(idx + 1))
+  partIdx = idx + 1
+  if toDelete is not None:
+    while partIdx in toDelete:
+      partIdx += 1
+    toDelete.append(partIdx)
+  partName = 'student' + str('0' if partIdx &lt; 10 else '') + str(partIdx)
+  #print 'partName = ' + partName
+  svg.setPart(partName, ('students/' + theme['students']['female'] + '.svg' if student['gender'] == 'female' else 'students/' + theme['students']['male'] + '.svg'), student)
+  idx += 1
+
+if toDelete is None:
+  for idx in range(len(data['students']), 26):
+    svg.removeById('student' + str('0' if idx &lt; 9 else '') + str(idx + 1))
 </dc:description>
       </cc:Work>
     </rdf:RDF>

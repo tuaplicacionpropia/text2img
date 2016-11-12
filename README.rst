@@ -22,6 +22,7 @@ Getting started with the library
     #python -c "import sys; import svgmanager; svgmanager.SvgManager.generate(sys.argv)"
     #python -c "import sys; from text2img import svgmanager; svgmanager.SvgManager.generate(sys.argv)"
     python -c "import sys; from text2img import SvgManager; SvgManager.generate(sys.argv)"
+    python -c "import sys; from text2img import SvgManager; SvgManager.generate(sys.argv)" /home/jmramoss/almacen/ORLAS/text2img/text2img/base2.svd
     sudo pip install --upgrade text2img
 
 Every resource exposes the following **methods**:

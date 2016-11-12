@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.2986438"
-     inkscape:cx="603.50299"
-     inkscape:cy="491.79766"
+     inkscape:zoom="0.85999059"
+     inkscape:cx="681.22744"
+     inkscape:cy="357.45833"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -53,28 +53,65 @@
         <dc:description>theme = data['theme']
 border = theme['border']
 
-svg.setPart('background', theme['background'], data)
-svg.setPart('decorator', theme['decorator'], data)
-svg.setPart('border_top_left', border['top_left'], data)
-svg.setPart('border_top_right', border['top_right'], data)
+svg.setPart('background', 'backgrounds/' + theme['background'] + '.svg', data)
+if 'decorator' in theme:
+  svg.setPart('decorator', 'decorators/' + theme['decorator'] + '.svg', data)
+else:
+  svg.removeById('decorator')
+svg.setPart('border_top_left', 'borders/' + border['top_left'] + '.svg', data)
+svg.setPart('border_top_right', 'borders/' + border['top_right'] + '.svg', data)
 
-svg.setPart('border_bottom_left', border['bottom_left'], data)
-svg.setPart('border_bottom_right', border['bottom_right'], data)
+svg.setPart('border_bottom_left', 'borders/' + border['bottom_left'] + '.svg', data)
+svg.setPart('border_bottom_right', 'borders/' + border['bottom_right'] + '.svg', data)
 
-svg.setPart('title', theme['header'], data)
-svg.setPart('school', theme['school'], data)
-svg.setPart('teacher', theme['teacher'], data['teacher'])
+svg.setPart('title', 'headers/' + theme['header'] + '.svg', data)
 
-svg.setText('subtitle', data['subtitle'])
-svg.setText('subtitle2', data['subtitle2'])
+svg.setPart('school', 'schools/' + theme['school'] + '.svg', data)
+
+svg.setPart('teacher', 'teachers/' + theme['teacher'] + '.svg', data['teacher'])
 
 svg.setText('endmsg', data['endmsg'])
 
-for idx in range(0, len(data['students'])):
+numStudents = len(data['students'])
+#print 'numStudents = ' + str(numStudents)
+faltanPorCompletar = 26 - numStudents
+toDelete = None
+toDelete = [22] if faltanPorCompletar == 1 else toDelete
+toDelete = [18, 26] if faltanPorCompletar == 2 else toDelete
+toDelete = [1, 9, 22] if faltanPorCompletar == 3 else toDelete
+toDelete = [1, 9, 18, 26] if faltanPorCompletar == 4 else toDelete
+toDelete = [1, 9, 18, 22, 26] if faltanPorCompletar == 5 else toDelete
+toDelete = [1, 5, 9, 18, 22, 26] if faltanPorCompletar == 6 else toDelete
+toDelete = [1, 9, 18, 19, 22, 25, 26] if faltanPorCompletar == 7 else toDelete
+toDelete = [1, 2, 8, 9, 18, 19, 25, 26] if faltanPorCompletar == 8 else toDelete
+toDelete = [1, 2, 8, 9, 18, 19, 22, 25, 26] if faltanPorCompletar == 9 else toDelete
+toDelete = [1, 2, 5, 8, 9, 18, 19, 22, 25, 26] if faltanPorCompletar == 10 else toDelete
+toDelete = [1, 2, 5, 8, 9, 18, 19, 20, 24, 25, 26] if faltanPorCompletar == 11 else toDelete
+toDelete = [1, 2, 3, 7, 8, 9, 18, 19, 20, 24, 25, 26] if faltanPorCompletar == 12 else toDelete
+
+#toDelete = None
+
+if toDelete is not None:
+  for idx in toDelete:
+    #print 'partidx to remove ' + str(idx)
+    svg.removeById('student' + str('0' if idx &lt; 10 else '') + str(idx))
+
+idx = 0
+while idx &lt; numStudents:
   student = data['students'][idx]
-  svg.setPart('student' + str('0' if idx &lt; 9 else '') + str(idx + 1), (theme['students']['female'] if student['gender'] == 'female' else theme['students']['male']), student)
-for idx in range(len(data['students']), 26):
-  svg.removeById('student' + str('0' if idx &lt; 9 else '') + str(idx + 1))
+  partIdx = idx + 1
+  if toDelete is not None:
+    while partIdx in toDelete:
+      partIdx += 1
+    toDelete.append(partIdx)
+  partName = 'student' + str('0' if partIdx &lt; 10 else '') + str(partIdx)
+  #print 'partName = ' + partName
+  svg.setPart(partName, ('students/' + theme['students']['female'] + '.svg' if student['gender'] == 'female' else 'students/' + theme['students']['male'] + '.svg'), student)
+  idx += 1
+
+if toDelete is None:
+  for idx in range(len(data['students']), 26):
+    svg.removeById('student' + str('0' if idx &lt; 9 else '') + str(idx + 1))
 </dc:description>
       </cc:Work>
     </rdf:RDF>
