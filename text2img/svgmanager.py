@@ -13,11 +13,12 @@ import tempfile
 from lxml import etree, objectify
 
 class SvgManager:
-  def __init__(self, fileXml, repository=None):
+  def __init__(self, fileXml, repository=None, resources=None):
     if not os.path.isfile(fileXml):
       raise Exception('File "' + fileXml + '" IS NOT EXISTS')
     self.fileXml = fileXml
     self.repository = repository
+    self.resources = resources
 
 #    self._adaptXml()
     parser = etree.XMLParser(remove_blank_text=True, ns_clean=True, no_network=True, load_dtd=False, dtd_validation=False, recover=True)
@@ -91,7 +92,7 @@ class SvgManager:
       os.remove(target)
     objectify.deannotate(self.root, cleanup_namespaces=True)
     self.tree.write(target, pretty_print=True, xml_declaration=True, encoding='UTF-8')
-    result = SvgManager(target, repository=self.repository)
+    result = SvgManager(target, repository=self.repository, resources=self.resources)
     return result
 
   def previewAsPng (self, output):
@@ -223,7 +224,7 @@ class SvgManager:
     #print os.path.dirname(self.fileXml)
     folder = os.path.dirname(self.fileXml)
     #folder = '/home/jmramoss/almacen/ORLAS/resources/'
-    folder = os.path.dirname(os.path.abspath(__file__))
+    folder = self.resources if self.resources is not None else os.path.dirname(os.path.abspath(__file__))
     #print 'folder images = ' + folder
     absimg = image
     if not absimg.startswith(os.sep):
@@ -287,7 +288,7 @@ class SvgManager:
             elem.tag = elem.tag[nsl:]
 
   def embedSVG (self, name, fileRes):
-    svg = SvgManager(fileRes, repository=self.repository)
+    svg = SvgManager(fileRes, repository=self.repository, resources=self.resources)
     self.remove_namespace('svg')
 
     eRootTarget = self.getRoot()
@@ -458,7 +459,7 @@ translateX = diffsize.width / factor = 80,855738464
     #print 'h1'
     partFile = os.path.join(folder, part)
     #print 'h2 partFile = ' + partFile
-    svgPart = SvgManager(partFile, repository=self.repository)
+    svgPart = SvgManager(partFile, repository=self.repository, resources=self.resources)
     #print 'h3 = ' + partFile
     svgPart.transform(data)
     #print 'h4'
@@ -520,6 +521,9 @@ translateX = diffsize.width / factor = 80,855738464
       repository = args[3]
     '''
     repository = obj['repository'] if 'repository' in obj else repository
+    resources = None
+    resources = os.path.dirname(os.path.abspath(infileAddr))
+
 
     for template in templates:
       templateUrl = template['template']
@@ -530,7 +534,7 @@ translateX = diffsize.width / factor = 80,855738464
       for key in setThemes:
         svgFile = os.path.join(repository, templateUrl)
         #print 'svgFile = ' + svgFile
-        svg = SvgManager(svgFile, repository)
+        svg = SvgManager(svgFile, repository=repository, resources=resources)
         obj['theme'] = themes[key]
         svg.transform(obj)
         tmpfile = tempfile.mkstemp(suffix='.svg', prefix='' + key + '_', dir=outputdir)[1]
