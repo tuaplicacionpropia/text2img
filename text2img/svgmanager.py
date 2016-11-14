@@ -13,10 +13,12 @@ import tempfile
 from lxml import etree, objectify
 
 class SvgManager:
-  def __init__(self, fileXml):
+  def __init__(self, fileXml, repository=None):
     if not os.path.isfile(fileXml):
       raise Exception('File "' + fileXml + '" IS NOT EXISTS')
     self.fileXml = fileXml
+    self.repository = repository
+
 #    self._adaptXml()
     parser = etree.XMLParser(remove_blank_text=True, ns_clean=True, no_network=True, load_dtd=False, dtd_validation=False, recover=True)
     self.tree = etree.parse(self.fileXml, parser)
@@ -89,7 +91,7 @@ class SvgManager:
       os.remove(target)
     objectify.deannotate(self.root, cleanup_namespaces=True)
     self.tree.write(target, pretty_print=True, xml_declaration=True, encoding='UTF-8')
-    result = SvgManager(target)
+    result = SvgManager(target, repository=self.repository)
     return result
 
   def previewAsPng (self, output):
@@ -285,7 +287,7 @@ class SvgManager:
             elem.tag = elem.tag[nsl:]
 
   def embedSVG (self, name, fileRes):
-    svg = SvgManager(fileRes)
+    svg = SvgManager(fileRes, repository=self.repository)
     self.remove_namespace('svg')
 
     eRootTarget = self.getRoot()
@@ -451,12 +453,12 @@ translateX = diffsize.width / factor = 80,855738464
 
   def setPart (self, name, part, data):
     #folder = '/home/jmramoss/almacen/ORLAS/resources/clips'
-    folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'clips')
+    folder = self.repository if self.repository is not None else os.path.join(os.path.dirname(os.path.abspath(__file__)), 'clips2')
     #print 'folder>>>>>>>>>>>>> ' + folder
     #print 'h1'
     partFile = os.path.join(folder, part)
     #print 'h2 partFile = ' + partFile
-    svgPart = SvgManager(partFile)
+    svgPart = SvgManager(partFile, repository=self.repository)
     #print 'h3 = ' + partFile
     svgPart.transform(data)
     #print 'h4'
@@ -486,14 +488,21 @@ translateX = diffsize.width / factor = 80,855738464
     #print '>>>>>>>>>>> obj.title = ' + obj['title']
     #print '>>>>>>>>>>> obj.subtitle = ' + obj['subtitle']
 
+
     themesfile = os.path.join(base, 'themes.svd')#open('/home/jmramoss/almacen/ORLAS/resources/themes.svd', 'r')
     #print 'themesfile = ' + themesfile
+    '''
     if len(args) > 2:
       themesfile = args[2]
       if not themesfile.startswith(os.sep):
         themesfile = os.path.join(base, themesfile)
+    '''
+
+    themesfile = obj['themes'] if 'themes' in obj else themesfile
+
     inthemes = open(themesfile, 'r')
     themes = hjson.load(inthemes, use_decimal=True)
+
 
     homedir = os.path.expanduser("~")
     outputdir = os.path.join(homedir, 'text2img_output')
@@ -504,7 +513,13 @@ translateX = diffsize.width / factor = 80,855738464
     templates = obj['templates'] if 'templates' in obj else templates
     #if len(templates) <= 0:
     #  folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'clips')
-      
+
+    repository = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'clips')
+    '''
+    if len(args) > 3:
+      repository = args[3]
+    '''
+    repository = obj['repository'] if 'repository' in obj else repository
 
     for template in templates:
       templateUrl = template['template']
@@ -513,9 +528,9 @@ translateX = diffsize.width / factor = 80,855738464
       dirname = os.path.dirname(templateUrl)
       setThemes = (template['themes'] if 'themes' in template and len(template['themes']) > 0 else themes.keys())
       for key in setThemes:
-        svgFile = os.path.join(base, templateUrl)
+        svgFile = os.path.join(repository, templateUrl)
         #print 'svgFile = ' + svgFile
-        svg = SvgManager(svgFile)
+        svg = SvgManager(svgFile, repository)
         obj['theme'] = themes[key]
         svg.transform(obj)
         tmpfile = tempfile.mkstemp(suffix='.svg', prefix='' + key + '_', dir=outputdir)[1]

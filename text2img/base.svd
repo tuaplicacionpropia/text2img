@@ -5,12 +5,20 @@ subtitle2: ''
 endmsg2: «Con esfuerzo y perseverancia podrás alcanzar tus metas»
 endmsg: «Me lo contaron y lo olvidé; lo vi y lo entendí; lo hice y lo aprendí»
 school: images/school.jpg
+themes: /home/jmramoss/almacen/ORLAS/orlas_infantiles/themes.svd
+repository: /home/jmramoss/almacen/ORLAS/orlas_infantiles
 templates: [
   {
-    template: clips/orla.svg
+    template: orla.svg
+    themes: [
+      t2_theme03
+    ]
   }
   {
-    template: clips/orla_type3.svg
+    template: orla_type3.svg
+    themes: [
+      t2_theme03
+    ]
   }
 ]
 /*
