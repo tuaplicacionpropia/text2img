@@ -214,7 +214,7 @@ class SvgManager:
     result = node.text if node is not None else None
     return result
 
-  def setImg (self, id, image):
+  def setImg (self, id, image, mode=None):
     basename = os.path.basename(image)
     #print 'image = ' + image
     #print 'basename = ' + basename
@@ -233,6 +233,8 @@ class SvgManager:
     eImage = self.findByName(id)
     eImage.set('{http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd}absref', absimg)
     eImage.set('{http://www.w3.org/1999/xlink}href', absimg)
+    print 'img Width = ' float(eImage.get('width'))
+    print 'img Height = ' float(eImage.get('height'))
 
   def padText (self, text, size):
     result = text
