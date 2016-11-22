@@ -10,6 +10,8 @@ import sys
 import tempfile
 #import argparse
 
+from PIL import Image
+
 from lxml import etree, objectify
 
 class SvgManager:
@@ -233,8 +235,33 @@ class SvgManager:
     eImage = self.findByName(id)
     eImage.set('{http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd}absref', absimg)
     eImage.set('{http://www.w3.org/1999/xlink}href', absimg)
-    print 'img Width = ' float(eImage.get('width'))
-    print 'img Height = ' float(eImage.get('height'))
+    if mode == 'preserve':
+      svgImgWidth = float(eImage.get('width'))
+      svgImgHeight = float(eImage.get('height'))
+      svgImgRatio = svgImgWidth / svgImgHeight
+      if os.path.isfile(absimg):
+        im = Image.open(absimg)
+        imWidth, imHeight = im.size
+        imRatio = float(imWidth) / float(imHeight)
+        if abs(imRatio - svgImgRatio) > 0.001:
+          #print 'img Width = ' + str(svgImgWidth)
+          #print 'img Height = ' + str(svgImgHeight)
+          preserveWidth = svgImgWidth / imRatio
+          preserveHeight = svgImgHeight * imRatio
+          newWidth = svgImgWidth
+          newHeight = svgImgHeight
+          if preserveWidth < svgImgHeight:
+            newWidth = svgImgWidth
+            newHeight = preserveWidth
+          elif preserveHeight < svgImgWidth:
+            newWidth = preserveHeight
+            newHeight = svgImgHeight
+          #print 'real img Width = ' + str(imWidth)
+          #print 'real img Height = ' + str(imHeight)
+          #print 'newWidth = ' + str(newWidth)
+          #print 'newHeight = ' + str(newHeight)
+          eImage.set('width', str(newWidth))
+          eImage.set('height', str(newHeight))
 
   def padText (self, text, size):
     result = text
