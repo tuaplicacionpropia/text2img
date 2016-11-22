@@ -490,7 +490,7 @@ translateX = diffsize.width / factor = 80,855738464
     #print '>>>>>>>>>>> obj.subtitle = ' + obj['subtitle']
 
 
-    themesfile = os.path.join(base, 'themes.svd')#open('/home/jmramoss/almacen/ORLAS/resources/themes.svd', 'r')
+    themesfile = None
     #print 'themesfile = ' + themesfile
     '''
     if len(args) > 2:
@@ -500,6 +500,7 @@ translateX = diffsize.width / factor = 80,855738464
     '''
 
     themesfile = obj['themes'] if 'themes' in obj else themesfile
+    themesfile = themesfile if themesfile is not None else os.path.join(base, 'themes.svd')#open('/home/jmramoss/almacen/ORLAS/resources/themes.svd', 'r')
 
     inthemes = open(themesfile, 'r')
     themes = hjson.load(inthemes, use_decimal=True)
@@ -515,15 +516,17 @@ translateX = diffsize.width / factor = 80,855738464
     #if len(templates) <= 0:
     #  folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'clips')
 
-    repository = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'clips')
+    repository = None
     '''
     if len(args) > 3:
       repository = args[3]
     '''
     repository = obj['repository'] if 'repository' in obj else repository
+    repository = repository if repository is not None else os.path.join(os.path.dirname(os.path.abspath(__file__)), 'clips')
+   
     resources = None
-    resources = os.path.dirname(os.path.abspath(infileAddr))
-
+    resources = obj['resources'] if 'resources' in obj else resources
+    resources = resources if resources is not None else os.path.dirname(os.path.abspath(infileAddr))
 
     for template in templates:
       templateUrl = template['template']
