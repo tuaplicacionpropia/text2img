@@ -347,11 +347,11 @@ class SvgManager:
     output = output[(len(self.resources)):]
     output = output if not output.startswith(os.sep) else output[1:]
     fulloutput = os.path.join(self.resources, output)
-
-    import cropfaces
-    cropFaces = cropfaces.cropfaces.CropFaces()
-    cropFaces.crop1Head(fullpath, fulloutput, mode)
-    print 'cropping img -> ' + fullpath
+    if (not os.path.isfile(fulloutput)) or (os.path.getmtime(fulloutput) < os.path.getmtime(fullpath)):
+      import cropfaces
+      cropFaces = cropfaces.cropfaces.CropFaces()
+      cropFaces.crop1Head(fullpath, fulloutput, mode)
+      #print 'cropping img -> ' + fullpath
     result = output
     return result
 
