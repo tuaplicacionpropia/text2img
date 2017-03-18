@@ -9,7 +9,6 @@ import hjson
 import sys
 import tempfile
 #import argparse
-import cropfaces
 
 from PIL import Image
 
@@ -337,7 +336,8 @@ class SvgManager:
 
   def crop (self, img):
     fullpath = os.path.join(self.resources, img)
-    cropFaces = cropfaces.CropFaces()
+    import cropfaces
+    cropFaces = cropfaces.cropfaces.CropFaces()
     cropFaces.crop1Head(fullpath, 'NEAR')
     print 'cropping img -> ' + fullpath
 

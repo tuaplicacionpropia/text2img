@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='text2img',
-    version='0.0.53',
+    version='0.0.54',
     url='https://github.com/tuaplicacionpropia/text2img',
     download_url='https://github.com/tuaplicacionpropia/text2img/archive/master.zip',
     author=u'tuaplicacionpropia.com',
