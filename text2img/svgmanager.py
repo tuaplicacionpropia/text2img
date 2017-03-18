@@ -62,6 +62,9 @@ class SvgManager:
     https://megustalapapeleria.com/2013/10/28/cuantos-pixeles-tiene-un-a4/
     https://megustalapapeleria.com/2013/12/07/cuantos-pixeles-tiene-un-a3/
 
+    300mm x 200mm = 11,81i x 7,87i
+     440ppp -> 5196 px x 3463 px
+
     1 pulgada = 25'40mm
     A4=210mm x 297mm= 8,2677 pulgadas x 11,6929 pulgadas
     72dpi -> 595,2744 x 841,8888
@@ -114,6 +117,21 @@ class SvgManager:
       output = os.path.dirname(self.fileXml) + "/" + output
       #print ">>>>>>>>>>>>>>> " + output
     os.system("inkscape --export-png=" + output + " -w 5145 -h 3638 --export-dpi=440 " + self.fileXml + ' >> /dev/null')
+
+  def saveAsPng30x20 (self, output):
+    if not output.startswith("/"):
+      output = os.path.dirname(self.fileXml) + "/" + output
+      #print ">>>>>>>>>>>>>>> " + output
+    os.system("inkscape --export-png=" + output + " -w 5196 -h 3463 --export-dpi=440 " + self.fileXml + ' >> /dev/null')
+
+  def saveAsJpg30x20 (self, output):
+    png = output + '.png'
+    self.saveAsPng30x20(png)
+    quality = ' -quality 100'
+    quality = ''
+    os.system('convert' + quality + ' -compress lossless ' + png + ' ' + output)
+    if os.path.isfile(output) and os.path.isfile(png):
+      os.remove(png)
 
   def previewAsJpg (self, output):
     png = output + '.png'
