@@ -334,12 +334,26 @@ class SvgManager:
         if elem.tag.startswith(ns):
             elem.tag = elem.tag[nsl:]
 
-  def crop (self, img):
+  def crop (self, img, mode='NEAR'):
+    result = None
+
     fullpath = os.path.join(self.resources, img)
+    dirpath = os.path.dirname(fullpath)
+    diroutput = os.path.join(dirpath, '__crop__')
+    if not os.path.exists(diroutput):
+      os.makedirs(diroutput)
+    filename = os.path.basename(fullpath)
+    output = os.path.join(diroutput, filename)
+    output = output[(len(self.resources)):]
+    output = output if not str.startswith(os.sep) else output[1:]
+    fulloutput = os.path.join(self.resources, output)
+
     import cropfaces
     cropFaces = cropfaces.cropfaces.CropFaces()
-    cropFaces.crop1Head(fullpath, 'NEAR')
+    cropFaces.crop1Head(fullpath, fulloutput, mode)
     print 'cropping img -> ' + fullpath
+    result = output
+    return result
 
   def embedSVG (self, name, fileRes):
     svg = SvgManager(fileRes, repository=self.repository, resources=self.resources)
