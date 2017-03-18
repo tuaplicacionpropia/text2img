@@ -336,6 +336,9 @@ class SvgManager:
 
   def crop (self, img):
     fullpath = os.path.join(self.resources, img)
+    import cropfaces
+    cropFaces = cropfaces.CropFaces()
+    cropFaces.crop1Head(fullpath, 'NEAR')
     print 'cropping img -> ' + fullpath
 
   def embedSVG (self, name, fileRes):
