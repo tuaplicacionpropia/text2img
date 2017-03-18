@@ -334,6 +334,10 @@ class SvgManager:
         if elem.tag.startswith(ns):
             elem.tag = elem.tag[nsl:]
 
+  def crop (self, img):
+    fullpath = os.path.join(self.resources, img)
+    print 'cropping img -> ' + fullpath
+
   def embedSVG (self, name, fileRes):
     svg = SvgManager(fileRes, repository=self.repository, resources=self.resources)
     self.remove_namespace('svg')
