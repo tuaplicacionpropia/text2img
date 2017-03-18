@@ -345,7 +345,7 @@ class SvgManager:
     filename = os.path.basename(fullpath)
     output = os.path.join(diroutput, filename)
     output = output[(len(self.resources)):]
-    output = output if not str.startswith(os.sep) else output[1:]
+    output = output if not output.startswith(os.sep) else output[1:]
     fulloutput = os.path.join(self.resources, output)
 
     import cropfaces
