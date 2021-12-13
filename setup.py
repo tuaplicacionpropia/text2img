@@ -27,7 +27,7 @@ setup(
     platforms='any',
     license='MIT',
     install_requires=[
-        'lxml==3.3.3',
+        'lxml==4.6.5',
         'hjson==2.0.2',
         'Pillow==3.4.2',
     ],
