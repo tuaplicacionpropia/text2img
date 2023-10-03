@@ -29,7 +29,7 @@ setup(
     install_requires=[
         'lxml==3.3.3',
         'hjson==2.0.2',
-        'Pillow==3.4.2',
+        'Pillow==10.0.1',
     ],
 )
 
